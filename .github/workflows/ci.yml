@@ -12,11 +12,9 @@ jobs:
         node-version: '18.x'
         cache: npm
     - name: using, test and linter
-      run: |
-        make setup
-        make start
-        make test
-        make lint
+      run: make setup
+      run: make test
+      run: make lint
         
         
 
